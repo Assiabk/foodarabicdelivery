@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>AssiaDelivery</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="logo">توصيل الطعام</div>
+        <ul id="nav-links">
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#menu">قائمة الطعام</a></li>
+          <li><a href="#offers">العروض</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+        <i class="fas fa-bars menu-icon" id="menu-toggle"></i>
+      </nav>
+    
+      <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+    
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      </script>
+     <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-overlay"></div>
+    <div class="home-content">
+      <h1>مرحبا بكم في أفضل خدمة توصيل طعام</h1>
+      <p>نوفر لكم وجبات لذيذة وصحية مباشرة إلى باب منزلكم. اطلب الآن وتمتع بخدمة سريعة.</p>
+      <a href="#menu" class="cta-button">اطلب الآن</a>
+    </div>
+  </section>
+     <!-- Food List Section -->
+     <section id="menu"  class="food-list-section">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-12">قائمة الطعام</h2>
+          <div class="flex flex-wrap justify-center gap-8">
+            <!-- Food Card 1 -->
+            <div class="food-card max-w-xs">
+              <img src="https://images.pexels.com/photos/17282046/pexels-photo-17282046.jpeg" alt="Food Item 1">
+              <div class="food-card-content">
+                <h3 class="food-card-title">وجبة الدجاج الشهية</h3>
+                <p class="food-card-description">استمتع بوجبة دجاج لذيذة مع توابل مميزة وخضروات طازجة.</p>
+                <a href="#order" class="food-card-button">اطلب الآن</a>
+              </div>
+            </div>
+  
+            <!-- Food Card 2 -->
+            <div class="food-card max-w-xs">
+              <img src="https://images.pexels.com/photos/11974636/pexels-photo-11974636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Food Item 2">
+              <div class="food-card-content">
+                <h3 class="food-card-title">بيتزا مارغريتا</h3>
+                <p class="food-card-description">بيتزا مارغريتا ذات طعم لا يقاوم مع جبنة طازجة وصلصة لذيذة.</p>
+                <a href="#order" class="food-card-button">اطلب الآن</a>
+              </div>
+            </div>
+  
+            <!-- Food Card 3 -->
+            <div class="food-card max-w-xs">
+              <img src="https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg" alt="Food Item 3">
+              <div class="food-card-content">
+                <h3 class="food-card-title">سلطة خضراء طازجة</h3>
+                <p class="food-card-description">سلطة خضراء مزيج من الخضروات الطازجة مع صوص خاص.</p>
+                <a href="#order" class="food-card-button">اطلب الآن</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- Offers Section -->
+<section id="offers" class="offers-section bg-gray-100 py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">عروضنا الخاصة</h2>
+        <div class="flex flex-wrap justify-center gap-8">
+            <!-- Offer Card 1 -->
+            <div class="offer-card max-w-xs bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg" alt="Offer 1" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">خصم 20% على جميع الوجبات</h3>
+                    <p class="text-gray-600 mb-4">احصل على خصم 20% عند طلبك لأول مرة. استخدم الرمز: FIRST20 عند الدفع.</p>
+                    <a href="#order" class="bg-orange-500 text-white px-4 py-2 rounded-lg">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- Offer Card 2 -->
+            <div class="offer-card max-w-xs bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Offer 2" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">وجبة مجانية عند طلب 3 وجبات</h3>
+                    <p class="text-gray-600 mb-4">اطلب ثلاث وجبات واحصل على واحدة مجاناً. لا تفوت هذه الفرصة!</p>
+                    <a href="#order" class="bg-orange-500 text-white px-4 py-2 rounded-lg">اطلب الآن</a>
+                </div>
+            </div>
+
+            <!-- Offer Card 3 -->
+            <div class="offer-card max-w-xs bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg" alt="Offer 3" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">وجبة عائلية بسعر خاص</h3>
+                    <p class="text-gray-600 mb-4">استمتع بوجبة عائلية تحتوي على أطباق متنوعة بسعر مخفض. اطلب الآن!</p>
+                    <a href="#order" class="bg-orange-500 text-white px-4 py-2 rounded-lg">اطلب الآن</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- Contact Section -->
+   <section id="contact" class="contact-section py-16 bg-gradient-to-r from-blue-400 to-purple-600 text-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <!-- Contact Form -->
+            <div class="md:w-1/2 bg-white text-gray-800 rounded-lg shadow-lg p-6 md:p-8 mb-8 md:mb-0">
+                <h2 class="text-3xl font-bold mb-6 text-center">اتصل بنا</h2>
+                <form action="#" method="post" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-lg font-semibold">الاسم</label>
+                        <input type="text" id="name" name="name" class="w-full p-3 border rounded-lg border-gray-300" placeholder="اكتب اسمك هنا" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg font-semibold">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" class="w-full p-3 border rounded-lg border-gray-300" placeholder="اكتب بريدك الإلكتروني هنا" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-lg font-semibold">رسالتك</label>
+                        <textarea id="message" name="message" rows="4" class="w-full p-3 border rounded-lg border-gray-300" placeholder="اكتب رسالتك هنا" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-orange-500 text-white p-3 rounded-lg font-semibold hover:bg-orange-600 transition duration-300">إرسال الرسالة</button>
+                </form>
+            </div>
+            <!-- Map Section -->
+            <div class="md:w-1/2 ml-4">
+                <div class="relative w-full h-64 rounded-lg overflow-hidden">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27311.920955094573!2d3.445430045117693!3d32.48346823211567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128b6f748c7160af%3A0x8b8c914e1f91aa8b!2sGharda%C3%AFa%2C%20Algeria!5e0!3m2!1sen!2sin!4v1618399834600!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
